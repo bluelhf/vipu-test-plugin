@@ -78,6 +78,14 @@
             <id>fabric-maven</id>
             <url>https://maven.fabricmc.net/</url>
         </repository>
+        <repository>
+            <id>tuonetar-snapshots</id>
+            <name>Ilari's Project Repository</name>
+            <url>https://maven.lhf.blue/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
     <dependencies>
