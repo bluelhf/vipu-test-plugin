@@ -52,6 +52,10 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>fabric-maven</id>
+            <url>https://maven.fabricmc.net/</url>
+        </repository>
     </repositories>
 
     <dependencies>
