@@ -5,17 +5,13 @@ import xyz.jpenilla.reflectionremapper.ReflectionRemapper;
 
 import static xyz.jpenilla.reflectionremapper.ReflectionRemapper.forReobfMappingsInPaperJar;
 
+@Name("Vipu Test Plugin")
 @Libraries({"net.bytebuddy:byte-buddy:1.14.2", "net.bytebuddy:byte-buddy-agent:1.14.2"})
 public class Plugin implements VipuPlugin {
     public static final ReflectionRemapper REMAPPER = forReobfMappingsInPaperJar();
 
-    @Override
-    public void onEnable() {
+    static {
+        System.err.println("Hello from the Vipu Test Plugin!");
         ZombieAdvice.inject(REMAPPER);
-    }
-
-
-    @Override
-    public void onDisable() {
     }
 }
